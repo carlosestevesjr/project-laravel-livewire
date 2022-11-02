@@ -28,6 +28,10 @@
     </head>
 
     <body>
+
+        @if (true)
+            @include('layouts.navbar') 
+        @endif
         @yield('body')
 
         @livewireScripts

@@ -26,9 +26,10 @@ class Show extends Component
 
     public function negativeRecomendation($id, $count)
     {
-        
+      
         $post = Posts::find($id);
-        $post->negative_rec = ($count + 1);
+        $post->negative_rec = ($count +1);
+        $post->category = 'series';
         $post->save();
 
     }
